@@ -1,0 +1,41 @@
+#section1{
+    margin-left: 20vh;
+}
+
+
+.btn1 {
+    background-color: rgb(242, 85, 18) !important;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn1:hover {
+    background-color: rgb(245, 95, 31) !important;
+    transform: scale(1.05);
+}
+
+.transparent-card {
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust the opacity for the frosted effect */
+    border: none;
+    color: white;
+    backdrop-filter: blur(10px); /* Add a blur effect to mimic frosted glass */
+    padding: 20px; /* Add some padding for better aesthetics */
+    border-radius: 10px; /* Add rounded corners for a softer look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    transition: background-color 0.3s ease; /* Add a transition for hover effect */
+
+    /* Center text vertically and horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.transparent-card:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust the hover background opacity */
+    transform: scale(1.02); /* Add a slight scale effect on hover for interactivity */
+}

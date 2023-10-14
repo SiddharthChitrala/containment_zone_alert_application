@@ -1,0 +1,75 @@
+<section id="section1">
+    <div class="container mt-5">
+        <form class="search-form">
+            <input class="search-input form-control" type="search" placeholder="Search..." aria-label="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- Add Details Button -->
+    <div class="container mt-5" style="margin-left: 5vh;">
+        <button class="btn btn-danger d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#addDetailsModal">
+            <img src="../../../assets/images/add_6431853.png" alt="" srcset="" style="height: 40px; margin-right: 10px;">
+            <span class="ms-2">Add Details</span>
+        </button>
+    </div>
+    
+</section>
+
+<!-- Modal for Adding Details -->
+<div class="modal fade" id="addDetailsModal" tabindex="-1" role="dialog" aria-labelledby="addDetailsModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addDetailsModalLabel">Add Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name:</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" [(ngModel)]="fullName" name="fullName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email"  [(ngModel)]="email" name="email" required >
+                    </div>
+
+                    <!-- Containment Zone Selection -->
+                    <div class="mb-3">
+                        <label for="containmentOption" class="form-label">Select or Enter Containment Zone:</label>
+                        <div class="input-group">
+                            <select class="form-select" id="containmentOption" aria-label="Select Containment Zone"   [(ngModel)]="containmentZone" name="containmentZone" required>
+                                <option value="select">Select from the list</option>
+                                <option value="zone1">Containment Zone 1</option>
+                                <option value="zone2">Containment Zone 2</option>
+                                <option value="zone3">Containment Zone 3</option>
+                                <option value="zone4">Containment Zone 4</option>
+                                <option value="zone5">Containment Zone 5</option>
+                            </select>
+                            <input type="text" class="form-control" id="containmentInput"
+                                placeholder="Or enter manually">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address:</label>
+                        <textarea class="form-control" id="address" rows="4"
+                            placeholder="Enter Address"    [(ngModel)]="address" name="address" required></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="additional info" class="form-label">Additional Details:</label>
+                        <textarea class="form-control" id="additional info" rows="5"
+                            placeholder="Enter Additional information"    [(ngModel)]="additionalDetails" name="address" required></textarea>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="onSubmit()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<section id="section1">
+    <div class="container">
+        <h1 class="fs-1 text-white fw-bold">Admin Dashboard</h1>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="progress">
+                    <div class="progress-bar bg-danger" [style.width.%]="(progressData.totalUsers / MAX_USERS) * 1300">
+                        <span class="fw-bolder fs-5">{{ progressData.totalUsers }} % Users</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="progress">
+                    <div class="progress-bar bg-success" [style.width.%]="(progressData.anotherValue / MAX_ANOTHER_VALUE) * 1300">
+                        <span class="fw-bolder fs-5">{{ progressData.anotherValue }} % Zones</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

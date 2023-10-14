@@ -1,0 +1,57 @@
+.section1{
+    background-color:rgba(18, 29, 41, 1);
+    height: 91vh;
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url(../../assets/images/continents-map-puwadol-jaturawutthichai-removebg-preview.png);
+}
+
+
+.section2{
+    background-color:rgba(6, 17, 30, 1);
+    height: 100vh;
+}
+
+.section3{
+    background-color:rgba(18, 29, 41, 1);
+    height: 210vh;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+.transparent-card {
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust the alpha (fourth value) for transparency */
+    color: white; /* Set text color to white */
+    border: none; /* Remove card border if needed */
+}
+
+.white-text {
+    color: white; /* Set text color to white */
+}
+
+.center-btn {
+    text-align: center;
+}
+.btn {
+    background-color: rgb(242, 85, 18) !important;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: rgb(245, 95, 31) !important;
+    transform: scale(1.05);
+}
+
+.section4{
+    background-color:rgba(6, 17, 30, 1);
+    height: 75vh;
+}

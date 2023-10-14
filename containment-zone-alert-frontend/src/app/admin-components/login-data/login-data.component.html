@@ -1,0 +1,27 @@
+<section id="section1">
+    <div class="container">
+        <p class="fs-1 fw-bold text-white">Login Data</p>
+        <!-- Search Bar -->
+        <form class="mb-3">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search by name" [(ngModel)]="searchQuery">
+                <button type="button" class="btn btn1 btn-danger" (click)="filterDataBySearch()">Search</button>
+            </div>
+        </form>
+        <div class="row">
+            <!-- Sample Card - Repeat as needed for each login detail -->
+            <ng-container  *ngFor="let data of filteredLoginData">
+                <div class="col-md-4">
+                    <div class="card transparent-card">
+                        <div class="card-body">
+                            <h5 class="card-title"> {{ data.username }}</h5>
+                            <p class="card-text">{{ data.email }}</p>
+                            <p class="card-text">{{ getRoleLabel(data.role) }}</p>
+                            <button class="btn btn-danger delete-button" (click)="deleteUser(data)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</section>

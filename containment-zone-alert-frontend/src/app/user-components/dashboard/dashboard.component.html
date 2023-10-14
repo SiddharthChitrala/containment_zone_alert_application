@@ -1,0 +1,43 @@
+<section id="section1">
+    <div class="side-nav">
+        <ul>
+            <li [ngClass]="{'active': activeIndex === 0}" (click)="setActiveIndex(1)">
+                <a (click)="navigateTo('Dashboard')">
+                    <div class="nav-item">
+                        <img src="../../../assets/images/layout_3247281.png" alt="" srcset="">
+                        <p class="fs-5">Dashboard</p>
+                    </div>
+                </a>
+            </li>
+            <li [ngClass]="{'active': activeIndex === 1}" (click)="setActiveIndex(4)">
+                <a (click)="navigateTo('Recruitment')">
+                    <div class="nav-item">
+                        <img src="../../../assets/images/document_3801849.png" alt="" srcset="">
+                        <p class="fs-5">Containment Zone List</p>
+                    </div>
+                </a>
+            </li>
+            <li [ngClass]="{'active': activeIndex === 3}" (click)="setActiveIndex(4)">
+                <a (click)="navigateTo('Map')">
+                    <div class="nav-item">
+                        <img src="../../../assets/images/gps_9282878.png" alt="" srcset="">
+                        <p class="fs-5 ">Map</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-md-10 col">
+        <!-- Use the router-outlet to display the routed content -->
+        <ng-container *ngIf="activeComponent; else showImage">
+            <!-- Display the active component -->
+            <ng-container *ngComponentOutlet="activeComponent"></ng-container>
+        </ng-container>
+
+        <ng-template #showImage>
+            <!-- Display -->
+            <img src="../../../assets/images/Welcome-amico.png" alt="" srcset="" style="height: 90vh; margin-left:40vh">
+        </ng-template>
+    </div>
+</section>

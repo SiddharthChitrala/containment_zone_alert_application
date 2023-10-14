@@ -1,0 +1,31 @@
+.navbar{
+    background-color:rgba(18, 29, 41, 1) !important;
+
+}
+
+.navbar-nav{
+    margin-left: 75vh !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: rgba(255, 108, 43, 1) !important;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: rgba(255, 108, 43, 1) !important;
+}
+
+.btn {
+    background-color: rgb(242, 85, 18) !important;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: rgb(245, 95, 31) !important;
+    transform: scale(1.05);
+}

@@ -1,0 +1,26 @@
+<section id="section1">
+  <!-- <div *ngFor="let data of locationData">
+    <p>{{ data.address }}</p>
+  </div> -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="input-group mt-4">
+          <input type="text" class="form-control search" [(ngModel)]="searchQuery" (ngModelChange)="searchLocation(searchQuery)" placeholder="Search Locations">
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-12">
+        <div class="card mt-4">
+          <div class="card-body">
+            <div #map id="map" style="height: 520px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
