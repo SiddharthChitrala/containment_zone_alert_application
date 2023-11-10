@@ -32,7 +32,7 @@ To set up the Containment Zone Tracker in your local environment, follow these s
 
 1. Clone the repository from GitHub:
 
-git clone https://github.com/your-username/containment-zone-tracker.git
+git clone https://github.com/SiddharthChitrala/containment_zone_alert_application.git
 
 2. Navigate to the project directory:
 
